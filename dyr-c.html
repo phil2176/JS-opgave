@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="no-js" lang="da">
+<head>
+    <meta charset="utf-8">
+    <title>dyr-c</title>
+    <style>
+
+
+    </style>
+    </head>
+<body>
+    <div class="dyr">
+        <strong class="navn"></strong>
+        <span>: et </span>
+        <span class="type"></span>
+        <span>, som lever i</span>
+        <span class="levested"></span>
+    </div>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", start);
+
+        let dyr={"navn":"Vaskebjørn", "type":"pattedyr", "levested": "America"};
+        function start(){
+            document.querySelector(".dyr .navn").textContent=dyr.navn;
+            document.querySelector(".dyr .type").textContent=dyr.type;
+            document.querySelector(".dyr .levested").textContent=dyr.levested;
+        }
+
+
+        console.log("En " + dyr.navn + " er et " + dyr.type + ", som lever i " + dyr.levested);
+
+
+    </script>
+
+</body>
+
+</html>
